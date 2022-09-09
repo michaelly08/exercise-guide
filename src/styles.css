@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: rgb(223, 63, 63);
+    --button-color: rgb(252, 97, 97);
+    --pink-color: rgb(255, 233, 233);
+}
+
+html{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+body {
+    
+    background-color: #FFFAFB;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+.whole-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.link {
+    color: black;
+    text-decoration: none;
+    
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+  }
+
+
+
+/*    NAVBAR     *//*    NAVBAR     *//*    NAVBAR     *//*    NAVBAR     */
+
+.navbar-container{
+    height: 40px;
+    width: 100vw;
+    max-width: 1500px;
+    background-color: transparent;
+    position: relative;
+}
+
+
+.navbar-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-box{
+    height: 100%;
+    margin-right: 10%;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar-box img{
+    height: 40px;
+    margin-left: 20px;
+}
+
+
+
+
+/*    NAVBAR     *//*    NAVBAR     *//*    NAVBAR     *//*    NAVBAR     */
+
+/*    HERO BANNER     *//*    HERO BANNER     *//*    HERO BANNER     *//*    HERO BANNER     */
+
+.herobanner-container{
+    height: 100vh;
+    max-height: 900px;
+    width: 100vw;
+    max-width: 1500px;
+    position: relative;
+}
+
+.herobanner-wrapper{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 255, 0.137); */
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.herobanner-box-button{
+    width: 200px;
+}
+
+.hero-banner-img {
+    position: absolute;
+    right: 40px;
+    top: -40px;
+    width: 600px;
+    max-height: 900px;
+    height: 100vh;
+    border-radius: 0 0 20px 20px;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.herobanner-box div:nth-child(1){
+    font-size: 30px;
+    margin: 0 0 30px 0;
+}
+
+.herobanner-box div:nth-child(2){
+    font-size: 60px;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.herobanner-box div:nth-child(3){
+    font-size: 25px;
+    margin: 20px 0 50px 0;
+}
+
+.herobanner-box div:nth-child(5) {
+    font-size: 200px;
+    position: absolute;
+    bottom: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+    opacity: 0.1;
+    z-index: -2;
+}
+
+
+
+/*    HERO BANNER     *//*    HERO BANNER     *//*    HERO BANNER     *//*    HERO BANNER     */
+
+
+
+/*    SEARCH     *//*    SEARCH     *//*    SEARCH     *//*    SEARCH     */
+
+.search-container {
+    width: 100vw;
+    max-width: 1500px;
+    position: relative;
+}
+
+.search-wrapper {
+    height: 150px;
+    width: 100%;
+    background-color: var(--pink-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-box{
+    font-size: 22px;
+}
+
+.search-box-form {
+    width: 80%;
+    height: 40px;
+
+}
+
+.search-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-form input{
+    width: 85%;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.search-form button {
+    color: white;
+    font-size: 20px;
+    width: 13%;
+    height: 100%;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.search-form button:hover{
+    background-color: var(--button-color);
+}
+/*    SEARCH     *//*    SEARCH     *//*    SEARCH     *//*    SEARCH     */
+
+
+
+/*    HORIZONTAL SCROLL     *//*    HORIZONTAL SCROLL     *//*    HORIZONTAL SCROLL     *//*    HORIZONTAL SCROLL     */
+.bodyPart-container {
+    margin: 20px;
+    height: 50px;
+    width: 150px;
+}
+
+.bodyPart-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(223, 63, 63, 0.342) 0px 3px 6px, rgba(223, 63, 63, 0.342) 0px 3px 6px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bodyPart-wrapper:hover{
+    background-color: var(--primary-color);
+    color:white;
+    scale: 0.95;
+}
+
+.scroll-menu{
+    position: relative;
+}
+
+.scroll-menu-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.bodyPart-box{
+    text-transform: capitalize;
+}
+
+.right-arrow, .left-arrow {
+    
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF2625;
+    font-size: 25px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: -25px;
+    right: 40px;
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+}
+
+
+.right-arrow {
+    right: 100px;
+    
+  }
+  
+.right-arrow:hover,
+.left-arrow:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.right-arrow i , .left-arrow i {
+    font-size: 40px;
+}
+
+
+
+/*    HORIZONTAL SCROLL     *//*    HORIZONTAL SCROLL     *//*    HORIZONTAL SCROLL     *//*    HORIZONTAL SCROLL     */
+
+
+
+
+
+
+/*    SHOWING RESULTS    *//*    SHOWING RESULTS    *//*    SHOWING RESULTS    *//*    SHOWING RESULTS    */
+
+.exercises-container{
+    width: 100vw;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.exercises-container-title{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.exercises-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+/*    SHOWING RESULTS    *//*    SHOWING RESULTS    *//*    SHOWING RESULTS    *//*    SHOWING RESULTS    */
+
+
+
+/*    EXERCISE CARD    *//*    EXERCISE CARD    *//*    EXERCISE CARD    *//*    EXERCISE CARD    */
+
+
+.exercise-card-container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 400px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.2s;
+}
+
+.exercise-card-container:hover{
+    scale: 1.03;
+    background-color:rgba(255, 197, 197, 0.226);
+}
+
+.exercise-gif{
+    object-fit: cover;
+    height: 55%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.exercise-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise-card-box{
+    display: flex;
+    margin: 8px 5px 15px 5px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+
+
+.exercise-card-type{
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 168, 70);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.exercise-card-type:nth-child(1){
+    background-color: rgb(255, 70, 70);
+}
+
+.exercise-card-name{
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.exercise-card-about-container{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    width: 280px;
+    max-width: 400px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.2s;
+
+}
+
+
+.exercise-card-about-container:hover{
+    scale: 1.03;
+    background-color:rgba(255, 197, 197, 0.226);
+}
+/*    EXERCISE CARD    *//*    EXERCISE CARD    *//*    EXERCISE CARD    *//*    EXERCISE CARD    */
+
+
+
+/*    EXERCISE DETAIL    *//*    EXERCISE DETAIL    *//*    EXERCISE DETAIL    *//*    EXERCISE DETAIL    */
+
+.exerciseDetail-container{
+    max-width: 1500px;
+    width: 100vw;
+    
+}
+
+.exerciseDetail-wrapper{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: flex-start;
+}
+
+
+.exerciseDetail-image{
+    height: 600px;
+}
+
+.exerciseDetail-image img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.exerciseDetail-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-evenly;
+
+}
+
+.exerciseDetail-name{
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+
+.exerciseDetail-description{
+    font-size: 20px;
+}
+
+.exerciseDetail-type{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*    EXERCISE DETAIL    *//*    EXERCISE DETAIL    *//*    EXERCISE DETAIL    *//*    EXERCISE DETAIL    */
+
+
+
+/*    EXERCISE VIDEO    *//*    EXERCISE VIDEO    *//*    EXERCISE VIDEO    *//*    EXERCISE VIDEO    */
+
+
+.exerciseVideo-container{
+    width: 100vw;
+    max-width: 1500px;
+    margin-top: 20px;
+    background-color: var(--pink-color);
+    margin-bottom: 40px;
+}
+
+
+.exerciseVideo-wrapper{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exerciseVideo-title{
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.exerciseVideo-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.exerciseVideo-video{
+    margin: 20px;
+    max-width: 265px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.exerciseVideo-video img{
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.2s;
+    margin-bottom: 5px;
+}
+
+
+.exerciseVideo-video:hover {
+    scale: 1.05;
+}
+
+.loading-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loading {
+    width: 80px;
+    height: 80px;
+    border-right: 4px solid #000000;
+    border-radius: 100%;
+    animation: spinRight 800ms linear infinite;
+}
+
+
+.loading:before, .loading:after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border-left: 3px solid #000000;
+    border-radius: 100%;
+    animation: spinLeft 800ms linear infinite;
+}
+
+
+.loading:after {
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    border: 0;
+    border-right: 2px solid #000000;
+    animation: none;
+}
+
+
+
+  @keyframes spinLeft {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(720deg);}
+  }
+  
+  @keyframes spinRight {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
+  }
+/*    EXERCISE VIDEO    *//*    EXERCISE VIDEO    *//*    EXERCISE VIDEO    *//*    EXERCISE VIDEO    */
+
+
+
+
+
+/*    SIMILAR EXERCISES    *//*    SIMILAR EXERCISES    *//*    SIMILAR EXERCISES    *//*    SIMILAR EXERCISES    */
+
+.similarExercises-container{
+    width: 100vw;
+    max-width: 1500px;
+}
+
+.similarExercises-wrapper{
+    width: 100%;
+}
+
+
+.similarExercises-box{
+    height: 500px;
+}
+
+.similarExercises-title{
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+/*    SIMILAR EXERCISES    *//*    SIMILAR EXERCISES    *//*    SIMILAR EXERCISES    *//*    SIMILAR EXERCISES    */
+
+/*    FOOTER    *//*    FOOTER    *//*    FOOTER    *//*    FOOTER    */
+.footer-container{
+    max-width: 1500px;
+    width: 100vw;
+    height: 100px;
+}
+
+.footer-wrapper{
+    width: 100%;
+    height: 100px;
+    background-color: var(--pink-color);
+}
+
+
+
+/*    FOOTER    *//*    FOOTER    *//*    FOOTER    *//*    FOOTER    */
+
+
+
+
+
+
+
+
+
+
+/*    MEDIA QUERIES     *//*    MEDIA QUERIES     *//*    MEDIA QUERIES     *//*    MEDIA QUERIES     */
+
+@media screen and (max-width:1023px) {
+  
+    .hero-banner-img {
+      right: 0;
+      opacity: 60%;
+      z-index: -2;
+      width: 50%;
+    }
+    .herobanner-box div:nth-child(5) {
+        display: none;
+    }
+    .exerciseDetail-wrapper{
+        padding: 10px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exerciseDetail-image{
+        height: 500px;
+    }
+    
+    .exerciseDetail-image img{
+        height: 100%;
+    }
+    
+    .exerciseDetail-box{
+        width: 100%;
+        padding: 10px;
+        height: 500px;
+    }
+    
+    .exerciseDetail-name{
+        font-size: 30px;
+    
+    }
+    
+    .exerciseDetail-description{
+        font-size: 18px;
+    }
+    
+    .exerciseDetail-type{
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+  
+  }
+  
+  
+  
+
+
+  
+@media screen and (max-width:747px) {
+    .herobanner-wrapper{
+        padding-left: 20px;
+    }
+    .hero-banner-img{
+      width: 50%;
+    }
+    .herobanner-box div:nth-child(1){
+        font-size: 27px;
+    }
+    
+    .herobanner-box div:nth-child(2){
+        font-size: 45px;
+    }
+    
+    .herobanner-box div:nth-child(3){
+        font-size: 20px;
+    }
+    .search-box{
+        font-size: 19px;
+    }
+    .search-wrapper {
+        height: 120px;
+    }
+    .search-box-form {
+        height: 35px;
+    
+    }
+    .bodyPart-container {
+        margin: 20px;
+        height: 50px;
+        width: 130px;
+    }
+    
+    .bodyPart-wrapper{
+        font-size: 16px;
+    }
+
+    .exerciseDetail-image{
+        height: 400px;
+    }
+    
+    .exerciseDetail-name{
+        font-size: 28px;
+    
+    }
+    
+    .exerciseDetail-description{
+        font-size: 16px;
+    }
+    
+    .exerciseDetail-type{
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .exerciseVideo-title{
+        font-size: 28px;
+    }
+    .navbar-box{
+        font-size: 19px;
+    }
+    .exercises-container-title{
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    .similarExercises-title{
+        font-size: 20px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+  @media screen and (max-width:400px) {
+    .herobanner-wrapper{
+        padding-left: 20px;
+    }
+    .hero-banner-img{
+      width: 50%;
+    }
+    .herobanner-box div:nth-child(1){
+        font-size: 22px;
+    }
+    
+    .herobanner-box div:nth-child(2){
+        font-size: 35px;
+    }
+    
+    .herobanner-box div:nth-child(3){
+        font-size: 16px;
+    }
+    .search-box{
+        font-size: 19px;
+    }
+    .search-wrapper {
+        height: 120px;
+    }
+    .search-box-form {
+        height: 30px;
+    
+    }
+    .search-box{
+        font-size: 16px;
+    }
+
+
+
+
+
+    .exercise-card-container {
+        height: 420px;
+    }
+    
+    .exercise-gif{
+        height: 65%;
+    }
+    .exercise-card-box{
+        font-size: 14px;
+    }
+
+    .exercise-card-box{
+        margin: 0px 5px 10px 5px;
+    
+    }
+    .exercise-card-type{
+        margin: 0px 8px 15px 8px;
+    }
+    .exerciseDetail-image{
+        height: 300px;
+    }
+    
+  }
