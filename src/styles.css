@@ -441,7 +441,7 @@ body {
 
 .exercise-gif-about{
     object-fit: cover;
-    max-height: 55%;
+    max-height: 50%;
     max-width: 100%;
     margin-bottom: 10px;
 }

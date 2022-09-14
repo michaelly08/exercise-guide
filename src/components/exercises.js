@@ -22,11 +22,13 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
     useEffect(() => {
         if(exercises.length) {
             setCurrentExercises(exercises.slice(indexOfFirstExercise, indexOfLastExercise))
+            
         }
-        console.log(exercises)
-    }, [exercises])
+       
+    }, [exercises, currentPage])
     
 
+    
 
     
     const paginate = (e, value) => {
