@@ -18,7 +18,7 @@ const HeroBanner = () => {
                         Provide you the most effective workouts
                     </div>
 
-                    <Button className="herobanner-box-button" variant="contained" color="error">
+                    <Button className="herobanner-box-button" variant="contained" color="error" onClick={() => window.scrollTo({top: 900, behavior: 'smooth'})}>
                         Explore Exercises
                     </Button>
                     <div className="noselect">

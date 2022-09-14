@@ -68,27 +68,41 @@ const Detail = ({exerciseDetail}) => {
         return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
       };
 
-
-
+    
+    console.log(exerciseDetail)
     return (
         <div className="exerciseDetail-container">
             <div className="exerciseDetail-wrapper">
-                <div className="exerciseDetail-image">
-                    <img src={gifUrl} alt={name} loading="lazy"></img>
-                </div>
 
-                <div className="exerciseDetail-box">
-                    <div>
-                        <div className="exerciseDetail-name">{name}</div>
-                        <div className="exerciseDetail-description">Exercises keeps you strong and healthy. {capitalizeFirst(`${name}`)} {` `} is one of the best exercises to target your {target}.</div>
+                {exerciseDetail.gifUrl ?
+                    <div className="exerciseDetail-image">
+                        <img src={gifUrl} alt={name} loading="lazy"></img>
                     </div>
+                    : <div className="loading-wrapper">
+                        <div className="loading"></div>
+                    </div>
+                    }
 
-                    <div>
-                        <div className="exerciseDetail-type">Body Part: {capitalizeFirst(`${bodyPart}`)}</div>
-                        <div className="exerciseDetail-type">Target: {capitalizeFirst(`${target}`)}</div>
-                        <div className="exerciseDetail-type">Equipment: {capitalizeFirst(`${equipment}`)}</div>
+
+
+                {exerciseDetail.name ?
+                    <div className="exerciseDetail-box">
+                        <div>
+                            <div className="exerciseDetail-name">{name}</div>
+                            <div className="exerciseDetail-description">Exercises keeps you strong and healthy. {capitalizeFirst(`${name}`)} {` `} is one of the best exercises to target your {target}.</div>
+                        </div>
+
+                        <div>
+                            <div className="exerciseDetail-type">Body Part: {capitalizeFirst(`${bodyPart}`)}</div>
+                            <div className="exerciseDetail-type">Target: {capitalizeFirst(`${target}`)}</div>
+                            <div className="exerciseDetail-type">Equipment: {capitalizeFirst(`${equipment}`)}</div>
+                        </div>
                     </div>
-                </div>
+                    : <div></div>
+                }
+                
+
+
 
 
 

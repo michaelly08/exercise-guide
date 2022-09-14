@@ -369,7 +369,7 @@ body {
 
 .exercise-gif{
     object-fit: cover;
-    height: 55%;
+    height: 50%;
     max-width: 100%;
     margin-bottom: 10px;
 }
@@ -386,7 +386,8 @@ body {
     color: white;
     text-align: center;
     text-transform: capitalize;
-    
+    font-size: 18px;
+    align-items: center;
 }
 
 
@@ -420,8 +421,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 8px;
     width: 280px;
-    max-width: 400px;
-    height: 380px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -431,9 +431,19 @@ body {
 }
 
 
+
+
 .exercise-card-about-container:hover{
     scale: 1.03;
     background-color:rgba(255, 197, 197, 0.226);
+}
+
+
+.exercise-gif-about{
+    object-fit: cover;
+    max-height: 55%;
+    max-width: 100%;
+    margin-bottom: 10px;
 }
 /*    EXERCISE CARD    *//*    EXERCISE CARD    *//*    EXERCISE CARD    *//*    EXERCISE CARD    */
 
@@ -750,6 +760,9 @@ body {
         height: 35px;
     
     }
+    .exercise-card-box{
+        font-size: 17px;
+    }
     .bodyPart-container {
         margin: 20px;
         height: 50px;
@@ -842,16 +855,13 @@ body {
     }
     
     .exercise-gif{
-        height: 65%;
+        height: 60%;
     }
     .exercise-card-box{
-        font-size: 14px;
+        font-size: 16px;
+        margin: 0px 5px 10px 5px;
     }
 
-    .exercise-card-box{
-        margin: 0px 5px 10px 5px;
-    
-    }
     .exercise-card-type{
         margin: 0px 8px 15px 8px;
     }

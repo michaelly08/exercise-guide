@@ -6,15 +6,26 @@ import ExerciseCard from "./exerciseCard"
 import {exerciseOptions, fetchData} from "../utils/fetchData"
 
 const Exercises = ({exercises, setExercises, bodyPart}) => {
-    console.log(exercises)
     
     const [currentPage, setCurrentPage] = useState(1);
+    const [currentExercises, setCurrentExercises] = useState([]);
 
     const exercisesPerPage = 6;
 
     const indexOfLastExercise = currentPage * exercisesPerPage
     const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage
-    const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise)
+
+    
+
+    // const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise)
+    // console.log(currentExercises)
+    useEffect(() => {
+        if(exercises.length) {
+            setCurrentExercises(exercises.slice(indexOfFirstExercise, indexOfLastExercise))
+        }
+        console.log(exercises)
+    }, [exercises])
+    
 
 
     
@@ -43,11 +54,19 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
     return (
         <div className="exercises-container">
            <div className="exercises-container-title">Showing Results</div>
-            <div className="exercises-wrapper">
-                    {currentExercises.map((exercise, index) => (
+
+           {currentExercises.length ?            
+                <div className="exercises-wrapper">
+                        {currentExercises.map((exercise, index) => (
                         <ExerciseCard key={index} exercise={exercise}/>
                     ))}
-            </div>
+                </div>
+                    : 
+                <div className="loading-wrapper">
+                    <div className="loading"></div>
+                </div>
+            }
+
             <Stack mt="80px" mb="50px" alignItems="center">
                 {exercises.length > exercisesPerPage && (
                     <Pagination 

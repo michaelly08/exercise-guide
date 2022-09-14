@@ -8,7 +8,7 @@ const ExerciseCardAbout = ({exercise}) => {
     return (
         <div className="exercise-card-about-container" >
             <Link to={`/exercise/${exercise.id}`} className="exercise-card-wrapper" style={{textDecoration: 'none'}} onClick={() => (window.scrollTo({top: 0, behavior: 'smooth'}))}>
-                <img className="exercise-gif" src={exercise.gifUrl} alt={exercise.name} loading="lazy"></img>
+                <img className="exercise-gif-about" src={exercise.gifUrl} alt={exercise.name} loading="lazy"></img>
 
 
                     <div className="exercise-card-box"> 
