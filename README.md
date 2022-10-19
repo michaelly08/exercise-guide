@@ -2,7 +2,7 @@
 ### Check Out The [Live Demo](https://michaellyfitness.netlify.app/)
 
 ## App Features
-- This ecommerce store is buit using React.
+- This site is buit using React.
 - API fetched from RapidApi.
 - Users can search for a fitness-related term by either body part selection or search bar.
 - Once searched, users will be shown exercises related to the searched term.
